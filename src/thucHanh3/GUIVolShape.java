@@ -69,14 +69,14 @@ public class GUIVolShape extends javax.swing.JFrame {
 	        jButton5.setText("Square Pyramid");
 	        jButton5.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                
+	            	 jButton5ActionPerformed(evt);
 	            }
 	        });
 
 	        jButton6.setText("Cylinder");
 	        jButton6.addActionListener(new java.awt.event.ActionListener() {
 	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	                
+	            	 jButton6ActionPerformed(evt);
 	            }
 	        });
 
@@ -160,6 +160,14 @@ public class GUIVolShape extends javax.swing.JFrame {
 	        pack();
 	    }// </editor-fold>                        
 
+	    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+	        //Square Pyramid
+	        if(evt.getSource() == jButton5){
+	            double a = Double.parseDouble(jTextField1.getText());
+	            double b = Double.parseDouble(jTextField2.getText());
+	            jTextField4.setText(Double.toString((a*a*b)/3));
+	        }
+	    }          
 	    
 	    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 	        //Cylinder ( Hinh tru )
