@@ -160,7 +160,7 @@ public class GUIVolShape extends javax.swing.JFrame {
 	        pack();
 	    }// </editor-fold>                        
 
-	    
+	    //Le Thi Kim Ngan 
 	    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 	        //Cylinder ( Hinh tru )
 	        if(evt.getSource() == jButton6){
@@ -169,6 +169,17 @@ public class GUIVolShape extends javax.swing.JFrame {
 	            jTextField4.setText(Double.toString(Math.PI*a*a*b));
 	        }
 	    }
+	    
+	    //Do Ngoc Sinh 
+	    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+	        //Cone ( Hinh chop )
+	        if(evt.getSource() == jButton4){
+	            double a = Double.parseDouble(jTextField1.getText());
+	            double b = Double.parseDouble(jTextField2.getText());
+	            jTextField4.setText(Double.toString((Math.PI*a*a*b)/3));
+	        }
+	    }   
+	    
 	                                    
 
 	    public static void main(String args[]) {
