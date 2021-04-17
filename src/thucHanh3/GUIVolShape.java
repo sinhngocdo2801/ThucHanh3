@@ -160,6 +160,15 @@ public class GUIVolShape extends javax.swing.JFrame {
 	        pack();
 	    }// </editor-fold>                        
 
+	    
+	    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+	        //Cylinder ( Hinh tru )
+	        if(evt.getSource() == jButton6){
+	            double a = Double.parseDouble(jTextField1.getText());
+	            double b = Double.parseDouble(jTextField2.getText());
+	            jTextField4.setText(Double.toString(Math.PI*a*a*b));
+	        }
+	    }
 	                                    
 
 	    public static void main(String args[]) {
