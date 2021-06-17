@@ -1,8 +1,8 @@
 package thucHanh3;
 
-public class GUIVolShape extends javax.swing.JFrame {
+public class GUIVolShape2 extends javax.swing.JFrame {
 
-	    public GUIVolShape() {
+	    public GUIVolShape2() {
 	        initComponents();
 	    }
 
@@ -218,14 +218,14 @@ public class GUIVolShape extends javax.swing.JFrame {
 	        }
 	    }                                        
 
-	    
+
 	                                    
 
 	    public static void main(String args[]) {
 
 	        java.awt.EventQueue.invokeLater(new Runnable() {
 	            public void run() {
-	                new GUIVolShape().setVisible(true);
+	                new GUIVolShape2().setVisible(true);
 	            }
 	        });
 	    }
